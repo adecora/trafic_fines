@@ -1,10 +1,10 @@
 [project]
-name = "tarea"
+name = "traficFines"
 version = "0.0.1"
 authors = [
 	{ name="Alejandro de Cora", email="alejandrodecora@gmail.com" },
 ]
-description = "Master Big Data, & Data Engineering, tarea"
+description = "Master Big Data, & Data Engineering, trafic fines package"
 readme = "README.md"
 requires-python = ">=3.12"
 classifiers = [
