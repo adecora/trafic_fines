@@ -32,7 +32,7 @@ Se realiza un análisis exploratorio previo de los datos con el objetivo de fami
 [Retrieved 2026-02-26, License - CC BY-SA 4.0]: #
 
 <footer style="width:100%; display:flex; justify-content:center; margin:3rem 0;">
-    <a href="https://alejandrodecora.es/til">
+    <a href="https://alejandrodecora.es/til" style="width:100%; display:flex; justify-content:center; text-decoration: none;">
         Hecho con 💜 por
         <!-- prettier-ignore -->
         <svg viewBox="0 0 600 530" version="1.1" xmlns="http://www.w3.org/2000/svg" style="position: relative; top: 4px; height: 1.25em;">
