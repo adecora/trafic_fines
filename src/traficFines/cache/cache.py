@@ -26,6 +26,8 @@ class Cache:
             app_name: Nombre de la aplicación para la que se crea la caché.
             obsolescence: Tiempo en días para considerar los datos como obsoletos.
         """
+        if obsolescence < 1:
+            raise CacheError("El tiempo de obsolescencia debe ser al menos 1 día.")
         self._app_name = app_name
         self._obsolescence = obsolescence
         self._cache_dir = CACHE_DIR / app_name
@@ -42,21 +44,6 @@ class Cache:
     @property
     def cache_dir(self) -> str:
         return str(self._cache_dir)
-
-    # @app_name.setter
-    # def app_name(self, value: str) -> None:
-    #     # No dejamos que se actualice desde fuera
-    #     pass
-
-    # @obsolescence.setter
-    # def obsolescence(self, value: int) -> None:
-    #     # No dejamos que se actualice desde fuera
-    #     pass
-
-    # @cache_dir.setter
-    # def cache_dir(self, value: str) -> None:
-    #     # No dejamos que se actualice desde fuera
-    #     pass
 
     def __str__(self) -> str:
         cache_files = [x for x in self._cache_dir.iterdir() if x.is_file()]
