@@ -3,7 +3,6 @@ Especialización de la clase Cache para trabajar con datos descargados de intern
 """
 
 from hashlib import md5
-from time import sleep
 
 import requests
 
@@ -24,6 +23,11 @@ class CacheURL(Cache):
         """
         url_hashed = md5(url.encode("utf-8")).hexdigest()
         return url_hashed
+
+    def __repr__(self) -> str:
+        return (
+            f"CacheURL(app_name='{self._app_name}', obsolescence={self._obsolescence})"
+        )
 
     def get(self, url: str) -> str:
         """

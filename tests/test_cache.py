@@ -23,7 +23,7 @@ TEST_CASES = [
 
 @pytest.fixture
 def clean_cache():
-    # Nos aseguramos que el directorio de caché está limipio antes y después de cada test
+    # Nos aseguramos que el directorio de caché está limpio antes y después de cada test
     cache_dir = CACHE_DIR / APP_NAME
     if cache_dir.exists():
         shutil.rmtree(cache_dir)
