@@ -191,6 +191,10 @@ def test_madrid_fines_add(clean_cache, madrid_fines_factory, mock_responses):
     # Cargamos el año completo
     madrid_fines.add(2024)
 
+    # En la carga de un año completo si los meses no existen en los metadatos no se lanza un error
+    # se deja lanza un mensaje y se continua con el siguiente mes
+    madrid_fines.add(2025)
+
     assert len(madrid_fines.loaded) == 12
     for month in range(1, 13):
         assert (2024, month) in madrid_fines.loaded

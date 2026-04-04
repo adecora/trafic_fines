@@ -160,13 +160,18 @@ class MadridFines:
         if month is not None:
             if (year, month) in self._loaded:
                 return
+
             df = self._load(year, month)
             self._clean(df)
             self._data = pd.concat([self._data, df])
             self._loaded.append((year, month))
         else:
             for m in range(1, 13):
-                self.add(year, m)
+                try:
+                    self.add(year, m)
+                except MadridError as e:
+                    if e.args[0] == f"No se encontró la URL para {year}-{m:02d}.":
+                        print(f"No se puden añadir datos para {year}-{m:02d}.")
 
     def fines_hour(self, fig_name: str = "evolucion_multas.jpg") -> None:
         """
