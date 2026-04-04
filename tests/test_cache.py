@@ -9,7 +9,6 @@ import pytest
 from traficFines import Cache
 from traficFines.cache import CacheError
 
-CACHE_DIR = Path.home() / ".my_cache"
 APP_NAME = "test_cache"
 OBSOLESCENCE = 1
 TEST_CASES = [
@@ -23,16 +22,16 @@ TEST_CASES = [
 
 
 @pytest.fixture
-def clean_cache():
-    # Nos aseguramos que el directorio de caché está limpio antes y después de cada test
-    cache_dir = CACHE_DIR / APP_NAME
-    if cache_dir.exists():
-        shutil.rmtree(cache_dir)
+def clean_cache(tmp_path, monkeypatch):
+    CACHE_DIR = tmp_path / ".my_cache"
+    # Usamos tmp_path para evitar utlizar el file-system real y garantizar un entorno limpio para cada test
+    monkeypatch.setattr("traficFines.cache.cache.CACHE_DIR", CACHE_DIR)
 
-    yield
+    app_dir = CACHE_DIR / APP_NAME
+    if app_dir.exists():
+        shutil.rmtree(app_dir)
 
-    if cache_dir.exists():
-        shutil.rmtree(cache_dir)
+    yield {"cache_dir": CACHE_DIR}
 
 
 @pytest.fixture
@@ -50,7 +49,7 @@ def test_cache_properties(clean_cache, cache_factory):
 
     assert cache.app_name == APP_NAME
     assert cache.obsolescence == OBSOLESCENCE
-    assert cache.cache_dir == str(CACHE_DIR / APP_NAME)
+    assert cache.cache_dir == str(clean_cache["cache_dir"] / APP_NAME)
 
 
 @pytest.mark.parametrize(

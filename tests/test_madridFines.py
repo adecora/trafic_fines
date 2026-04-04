@@ -3,12 +3,12 @@ from pathlib import Path
 
 import pytest
 import responses
+from numpy import e
 
 # Ver: https://github.com/omarkohl/pytest-datafiles/blob/main/examples/example_3.py
 TEST_DIR = Path(__file__).parent.resolve() / "test_files"
 
 
-CACHE_DIR = Path.home() / ".my_cache"
 APP_NAME = "test_madrid_fines"
 OBSOLESCENCE = 1
 TEST_CASES = [
@@ -85,16 +85,16 @@ from traficFines.madridFines import MadridError
 
 
 @pytest.fixture
-def clean_cache():
-    # Nos aseguramos que el directorio de caché está limpio antes y después de cada test
-    cache_dir = CACHE_DIR / APP_NAME
-    if cache_dir.exists():
-        shutil.rmtree(cache_dir)
+def clean_cache(tmp_path, monkeypatch):
+    CACHE_DIR = tmp_path / ".my_cache"
+    # Usamos tmp_path para evitar utlizar el file-system real y garantizar un entorno limpio para cada test
+    monkeypatch.setattr("traficFines.cache.cache.CACHE_DIR", CACHE_DIR)
 
-    yield
+    app_dir = CACHE_DIR / APP_NAME
+    if app_dir.exists():
+        shutil.rmtree(app_dir)
 
-    if cache_dir.exists():
-        shutil.rmtree(cache_dir)
+    yield {"cache_dir": CACHE_DIR}
 
 
 @pytest.fixture
@@ -207,15 +207,17 @@ def test_madrid_fines_hour(clean_cache, madrid_fines_factory, mock_responses, tm
     ):
         madrid_fines.fines_hour()
 
-    filename = tmp_path / "evolucion_multas.jpg"
+    dirname = tmp_path / "home"
+    dirname.mkdir()
+    filename = dirname / "evolucion_multas.jpg"
     madrid_fines.add(2024)
 
-    assert len(list(tmp_path.iterdir())) == 0
+    assert len(list(dirname.iterdir())) == 0
 
     # Crea la imagen en el directorio temporal
     madrid_fines.fines_hour(fig_name=filename)
 
-    assert len(list(tmp_path.iterdir())) == 1
+    assert len(list(dirname.iterdir())) == 1
     assert filename.exists()
     assert filename.stat().st_size > 0
     with filename.open("rb") as f:
