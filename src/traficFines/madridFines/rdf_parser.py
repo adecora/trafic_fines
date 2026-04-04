@@ -8,6 +8,7 @@ RDF_NS = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 DCAT_NS = "http://www.w3.org/ns/dcat#"
 DCT_NS = "http://purl.org/dc/terms/"
 
+# Exiten lo ficheros de tipo: 210104-82-multas-circulacion-detalle-txt que traen el dato en formato txt, separa por tabuladores
 TITLE_RE = re.compile(r"^210104-\d+-multas-circulacion-detalle-csv$", re.IGNORECASE)
 DESCRIPTION_RE = re.compile(
     r"^Multas de circulación: detalle. (?P<year>\d{4}) (?P<month>\w+). Detalle$",

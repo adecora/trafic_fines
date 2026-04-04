@@ -1,0 +1,279 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:dct="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:adms="http://www.w3.org/ns/adms#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:locn="http://www.w3.org/ns/locn#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:time="http://www.w3.org/2006/time#" xmlns:dcatap="http://data.europa.eu/r5r/">
+  <dcat:Dataset rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle">
+    <dct:identifier>https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle</dct:identifier>
+    <dct:title xml:lang="es">Multas de circulación: detalle</dct:title>
+    <dct:description xml:lang="es">En este conjunto de datos se van incorporando todas las multas de circulación que el Ayuntamiento de Madrid tramita cada mes, con todo el detalle posible sobre cada una de ellas que permite la legislación de protección de datos. Se incluye información sobre la infracción cometida, su gravedad o el lugar donde se denunció. **La información se ajusta a los datos existentes en el momento de la publicación,** y no prejuzgan el resultado final de la tramitación del expediente sancionador, como consecuencia reclamaciones y/ o recursos de las personas denunciadas.
+Por motivos de protección de datos, existe un número de infracciones que se han agrupado, indicando solamente el número y el importe total de todas ellas. Porcentualmente, es un número ínfimo. **Se recuerda, que está expresamente prohibido realizar labores de re-identificación personal de la información**.
+La información que se proporciona es la que se tiene en los sistemas de información del Ayuntamiento, en el momento de la extracción, **con lo cual pudieran existir alguna infracción que todavía no se hubiese mecanizado en ese momento** , lo cual no quiere indicar que no exista. Este número de infracciones de existir, seria mínimo.
+En estos ficheros de detalle, **no se contabilizan** las denuncias que contienen algún error y tampoco las anuladas.
+El campo &quot;impor_bol&quot; es el importe de la sanción prevista para la infracción. El mismo se verá reducido en un 50% si se paga la multa en el plazo de tiempo establecido en la Ley de Seguridad Vial y no se corresponde necesariamente con el que se recaudará efectivamente. Existe otro conjunto de datos de multas existente en el portal, con información complementaria y que contiene estadísticas mensuales de importes recaudados en vía voluntaria e importes transferidos a la vía ejecutiva (este último dato no implica que haya sido cobrada esa cantidad en ejecutiva).
+También dispone en el Portal de distintos conjuntos de datos presupuestos, con previsiones de recaudación anual y con la ejecución mensual de esa previsión.
+**Importante** :
+  * **La información que se ofrece presenta un decalaje de tres meses con respecto al mes en que se produce la descarga. Este retraso es necesario para la consolidación de la información proveniente de diferentes fuentes.**
+  * **Los ficheros, a partir de marzo 2016 (incluído), presentan dos columnas adicionales,** como mejora de la información, con campos que faciliten la georreferenciación****(Coordenada-X; Coordenada-Y, en sistema de referencia ETRS89).**** En una primera fase, estos campos incluyen datos de las multas expedidas por:
+    * Rebasar un semáforo en fase roja.
+    * No respetar las señales en una vía de circulación restringida o reservadas.
+    * Acceder a Madrid Central sin autorización.
+  * En fases sucesivas, se irá ampliando progresivamente la información de coordenadas.</dct:description>
+    <dcat:keyword xml:lang="es">infracciones de tráfico</dcat:keyword>
+    <dcat:keyword xml:lang="es">multas de circulación</dcat:keyword>
+    <dcat:keyword xml:lang="es">multas de tráfico</dcat:keyword>
+    <dcat:keyword xml:lang="es">trafico</dcat:keyword>
+    <dcat:keyword xml:lang="es">transpamovilidad</dcat:keyword>
+    <dcat:keyword xml:lang="es">transpamultas</dcat:keyword>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-11-01T00:00:00Z</dct:issued>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-10-23T00:00:00Z</dct:modified>
+    <dct:accrualPeriodicity>
+      <dct:Frequency>
+        <rdfs:label xml:lang="es">Mensual</rdfs:label>
+        <rdf:value>
+          <time:DurationDescription>
+            <rdfs:label xml:lang="es">Mensual</rdfs:label>
+            <time:months rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</time:months>
+          </time:DurationDescription>
+        </rdf:value>
+      </dct:Frequency>
+    </dct:accrualPeriodicity>
+    <dcat:theme rdf:resource="http://datos.gob.es/kos/sector-publico/sector/transporte"/>
+    <dct:license>
+      <dct:LicenseDocument>
+        <dct:identifier>cc-by</dct:identifier>
+        <dct:title xml:lang="es">Creative Commons Attribution 4.0 International (CC BY 4.0)</dct:title>
+        <dct:type rdf:resource="http://purl.org/adms/licencetype/Attribution"/>
+        <foaf:page rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+      </dct:LicenseDocument>
+    </dct:license>
+    <adms:version>1.0</adms:version>
+    <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/SPA"/>
+    <dcat:contactPoint>
+      <vcard:Kind>
+        <vcard:fn xml:lang="es">Ayuntamiento de Madrid</vcard:fn>
+        <vcard:organization-name xml:lang="es">Ayuntamiento de Madrid</vcard:organization-name>
+        <vcard:hasEmail rdf:resource="mailto:dgtransparenciayc@madrid.es"/>
+        <vcard:hasURL rdf:resource="https://www.madrid.es"/>
+        <vcard:hasUID rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+        <vcard:hasTelephone rdf:resource="tel:+34915884764"/>
+      </vcard:Kind>
+    </dcat:contactPoint>
+    <dct:creator rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+    <dct:publisher rdf:resource="http://datos.gob.es/recurso/sector-publico/org/Organismo/L01280796"/>
+    <dct:spatial rdf:resource="http://sws.geonames.org/3117735/"/>
+    <dct:temporal>
+      <dct:PeriodOfTime>
+        <dcat:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-09-01</dcat:startDate>
+        <dcat:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-09-30</dcat:endDate>
+      </dct:PeriodOfTime>
+    </dct:temporal>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-15-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Diciembre. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv/download/210104-15-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>70444164</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-04T08:26:13.692000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-26-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-26-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Enero. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-26-multas-circulacion-detalle-csv/download/210104-26-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>62599247</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-05-27T09:19:05.616000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-337-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-337-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Febrero. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-337-multas-circulacion-detalle-csv/download/210104-337-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>62667331</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-05T09:55:38.263000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-24-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-24-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Marzo. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-24-multas-circulacion-detalle-csv/download/210104-24-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>66989100</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-08T17:00:55.220000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-23-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-23-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Abril. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-23-multas-circulacion-detalle-csv/download/210104-23-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>58864751</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-23T09:27:27.066000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-339-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-339-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Mayo. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-339-multas-circulacion-detalle-csv/download/210104-339-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>53614367</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-24T15:02:07.275000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-341-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-341-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Junio. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-341-multas-circulacion-detalle-csv/download/210104-341-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>58648830</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-28T17:06:40.077000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-21-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-21-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Julio. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-21-multas-circulacion-detalle-csv/download/210104-21-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>64964654</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-31T14:23:22.805000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-343-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-343-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Agosto. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-343-multas-circulacion-detalle-csv/download/210104-343-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>54565308</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-03T08:51:51.058000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-344-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-344-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Septiembre. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-344-multas-circulacion-detalle-csv/download/210104-344-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>67884732</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T09:23:35.986000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-18-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-18-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Octubre. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-18-multas-circulacion-detalle-csv/download/210104-18-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>74828136</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-05T09:26:20.686000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-358-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-358-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2015 Septiembre. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-358-multas-circulacion-detalle-csv/download/210104-358-multas-circulacion-detalle-csv.csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>38100416</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-01T00:00:00Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-359-multas-circulacion-detalle-txt">
+        <dct:title xml:lang="es">210104-359-multas-circulacion-detalle-txt</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2015 Septiembre. Agrupadas-excluidas</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/TXT"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-359-multas-circulacion-detalle-txt/download/210104-359-multas-circulacion-detalle-txt"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>33</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-01-01T00:00:00Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/plain"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-16-multas-circulacion-detalle-csv">
+        <dct:title xml:lang="es">210104-16-multas-circulacion-detalle-csv</dct:title>
+        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Noviembre. Detalle</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
+        <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-16-multas-circulacion-detalle-csv/download/210104-16-multas-circulacion-detalle-csv"/>
+        <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
+        <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/legalcode.es"/>
+        <dcatap:applicableLegislation rdf:resource="http://data.europa.eu/eli/dir/2019/1024/oj"/>
+        <dcatap:applicableLegislation rdf:resource="https://www.boe.es/eli/es/l/2007/11/16/37/con"/>
+        <dcat:byteSize>71660148</dcat:byteSize>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-03T08:20:11.142000Z</dct:modified>
+        <dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/text/csv"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+  </dcat:Dataset>
+</rdf:RDF>

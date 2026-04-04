@@ -96,7 +96,11 @@ class MadridFines:
             DataFrame con los datos de multas de circulación.
         """
         url = self.get_url(year, month)
-        df = pd.read_csv(StringIO(self._cacheurl.get(url, encoding="latin-1")), sep=";")
+        df = pd.read_csv(
+            StringIO(self._cacheurl.get(url, encoding="latin-1")),
+            sep=";",
+            low_memory=False,
+        )
         self._clean(df)
         return df
 
@@ -120,7 +124,7 @@ class MadridFines:
 
         df.rename(columns=normalize_columns, inplace=True)
 
-        # Eliminar espacios en blanco de las columnas de tipo string
+        # Eliminar espacios en blanco de las columnas de tipo string o object:
         for col in df.columns:
             if df[col].dtype == "str":
                 df[col] = df[col].str.strip()
