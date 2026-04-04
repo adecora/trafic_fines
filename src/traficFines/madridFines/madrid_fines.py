@@ -220,6 +220,7 @@ class MadridFines:
 
         fig.savefig(fig_name, bbox_inches="tight")
         plt.close(fig)
+        print(f"Gráfico guardado como '{fig_name}'.")
 
     def fines_calification(self) -> pd.DataFrame:
         """

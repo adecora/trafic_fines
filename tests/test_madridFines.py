@@ -3,7 +3,6 @@ from pathlib import Path
 
 import pytest
 import responses
-from numpy import e
 
 # Ver: https://github.com/omarkohl/pytest-datafiles/blob/main/examples/example_3.py
 TEST_DIR = Path(__file__).parent.resolve() / "test_files"
