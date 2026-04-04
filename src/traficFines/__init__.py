@@ -1,4 +1,4 @@
-from .cache import Cache, CacheError, CacheURL
-from .madridFines import MadridError, MadridFines
+from .cache import Cache, CacheURL
+from .madridFines import MadridFines
 
-__all__ = ["Cache", "CacheError", "CacheURL", "MadridFines", "MadridError"]
+__all__ = ["Cache", "CacheURL", "MadridFines"]

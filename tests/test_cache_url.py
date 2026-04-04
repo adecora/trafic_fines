@@ -6,7 +6,8 @@ import pytest
 import responses
 from requests.exceptions import HTTPError
 
-from traficFines.cache import CacheError, CacheURL
+from traficFines import CacheURL
+from traficFines.cache import CacheError
 
 CACHE_DIR = Path.home() / ".my_cache"
 APP_NAME = "test_cache_url"

@@ -29,13 +29,14 @@ class CacheURL(Cache):
             f"CacheURL(app_name='{self._app_name}', obsolescence={self._obsolescence})"
         )
 
-    def get(self, url: str) -> str:
+    def get(self, url: str, *, encoding: str = "utf-8") -> str:
         """
         Recupera el contenido de un archivo de caché específico si existe y no está obsoleto, si no, realiza una
         petición a la URL y guarda el resultado en la caché.
 
         Args:
             url: URL del archivo de caché a recuperar.
+            encoding: Codificación a usar para decodificar el contenido de la respuesta HTTP (por defecto "utf-8").
 
         Returns:
             Contenido del archivo de caché como una cadena.
@@ -54,9 +55,10 @@ class CacheURL(Cache):
         response = requests.get(url)
         # Lanza una excepción si la respuesta no es exitosa
         response.raise_for_status()
-        content = response.text
-        super().set(name, content)
-        return content
+        # Se borra el contenido de caracteres nulos y decodificamos el contenido usando la codificación especificada
+        data = response.content.replace(b"\x00", b"").decode(encoding)
+        super().set(name, data)
+        return data
 
     def exists(self, url: str) -> bool:
         """

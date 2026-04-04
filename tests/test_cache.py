@@ -6,7 +6,8 @@ from pathlib import Path
 
 import pytest
 
-from traficFines.cache import Cache, CacheError
+from traficFines import Cache
+from traficFines.cache import CacheError
 
 CACHE_DIR = Path.home() / ".my_cache"
 APP_NAME = "test_cache"

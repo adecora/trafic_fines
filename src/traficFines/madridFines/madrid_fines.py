@@ -50,6 +50,9 @@ class MadridFines:
         )
         return json.dumps({f"{y}{m:02d}": v for (y, m), v in sort_metadata}, indent=4)
 
+    def __repr__(self) -> str:
+        return f"MadridFines(app_name='{self._cacheurl.app_name}', obsolescence={self._cacheurl.obsolescence})"
+
     def update(self) -> None:
         """
         Actualiza los metadatos de las multas de circulación y los carga en memoria.
@@ -93,7 +96,7 @@ class MadridFines:
             DataFrame con los datos de multas de circulación.
         """
         url = self.get_url(year, month)
-        df = pd.read_csv(StringIO(self._cacheurl.get(url)), sep=";", encoding="latin1")
+        df = pd.read_csv(StringIO(self._cacheurl.get(url, encoding="latin-1")), sep=";")
         self._clean(df)
         return df
 
