@@ -5,6 +5,7 @@ Implementación de la clase Cache para guardar y recuperar datos en disco, de fo
 import datetime as dt
 from pathlib import Path
 from time import time
+from typing import TextIO
 
 CACHE_DIR = Path.home() / ".my_cache"
 
@@ -67,6 +68,30 @@ class Cache:
         cache_file = self._cache_dir / name
         with cache_file.open("w", encoding="utf-8") as f:
             f.write(data)
+
+    def set_fromfile(self, name: str, data: TextIO | str | Path) -> None:
+        """
+        Almacena los datos de un archivo en la caché con el nombre especificado.
+
+        Args:
+            name: Nombre del archivo de caché.
+            data: File-like object con los datos a guardar en la caché, o una ruta a un archivo.
+
+        Returns:
+            None
+        """
+        close_source = False
+        if not hasattr(data, "read"):
+            data = open(data, "r")
+            close_source = True
+        cache_file = self._cache_dir / name
+
+        with cache_file.open("w", encoding="utf-8") as f_out:
+            for line in data:
+                f_out.write(line)
+
+        if close_source:
+            data.close()
 
     def exists(self, name: str) -> bool:
         """

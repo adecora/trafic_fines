@@ -1,3 +1,8 @@
+"""
+Módulo para automatizar la descarga y el análisis de los datos de multas de circulación
+del portal de datos abiertos del Ayuntamiento de Madrid.
+"""
+
 import json
 from io import StringIO
 

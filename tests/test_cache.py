@@ -2,6 +2,7 @@ import datetime as dt
 import re
 import shutil
 import types
+from io import StringIO
 from pathlib import Path
 
 import pytest
@@ -61,6 +62,32 @@ def test_cache_set_and_load(clean_cache, cache_factory, name, data):
     cache.set(name, data)
     assert str(cache) == f"La caché de '{APP_NAME}' contiene 1 archivo."
     assert cache.load(name) == data
+
+
+@pytest.mark.parametrize(
+    "name, data",
+    TEST_CASES[1:],
+)
+def test_cache_set_fromfile(clean_cache, cache_factory, tmp_path, name, data):
+    cache = cache_factory()
+    cache.set_fromfile(f"{name}_io", StringIO(data))
+
+    assert str(cache) == f"La caché de '{APP_NAME}' contiene 1 archivo."
+    assert cache.load(f"{name}_io") == data
+
+    dirname = tmp_path / "home"
+    dirname.mkdir()
+    data_file = dirname / f"{name}.txt"
+    with data_file.open("w", encoding="utf-8") as f:
+        f.write(data)
+
+    cache.set_fromfile(f"{name}_file", data_file)
+    assert str(cache) == f"La caché de '{APP_NAME}' contiene 2 archivos."
+    assert cache.load(f"{name}_file") == data
+
+    cache.set_fromfile(f"{name}_str", str(data_file))
+    assert str(cache) == f"La caché de '{APP_NAME}' contiene 3 archivos."
+    assert cache.load(f"{name}_str") == data
 
 
 @pytest.mark.parametrize(
