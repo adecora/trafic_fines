@@ -102,7 +102,7 @@ class MadridFines:
         """
         url = self.get_url(year, month)
         df = pd.read_csv(
-            StringIO(self._cacheurl.get(url, encoding="latin-1")),
+            StringIO(self._cacheurl.get(url)),
             sep=";",
             low_memory=False,
         )

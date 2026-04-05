@@ -58,8 +58,7 @@ class CacheURL(Cache):
         response.raise_for_status()
         # Se borra el contenido de caracteres nulos y decodificamos el contenido usando la codificación especificada
         data = response.content.replace(b"\x00", b"").decode(encoding)
-        data = StringIO(data)
-        super().set_fromfile(name, data)
+        super().set_fromfile(name, StringIO(data))
         return data
 
     def exists(self, url: str) -> bool:
