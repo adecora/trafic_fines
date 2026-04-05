@@ -25,6 +25,28 @@ Se realiza un análisis exploratorio previo de los datos con el objetivo de fami
   * https://github.com/CoreyMSchafer/dotfiles/blob/master/settings/VSCode-Settings.json
 
 
+## Intrucciones de uso
+
+Existe una guía con las intrucciones de uso del módulo `traficFines` en [ejemplo_uso.ipynb](./notebooks/ejemplos_uso.ipynb).
+
+![Ejemplo de uso desde la linea de comandos](./assets/ejemplo-uso.gif)
+
+
+## Tests
+
+- En el directorio `tests/test_files` se incluyen los ficheros de datos para simular las respuestas a las peticiones web al portal de datos del ayuntamiento de Madrid.
+  * `metadata.rdf` es un fichero reducido del fichero original de metadata.
+  * `metadata_fake.rdf` contiene un registro del `xml` mal construido para poder testear el parser `parse_multas_madrid_rdf` en este caso.
+  * Los ficheros de multas `multas_month_2024.csv` son una versión reducida de los ficheros originales que se construyen con los primero 5000 registros (`head -n 5000`) de estos.
+- `pytest`:
+  * Archivos temporales en [pytest](https://docs.pytest.org/en/stable/how-to/tmp_path.html).
+  * Para mockear las peticiones web se usa la librería [responses](https://pypi.org/project/responses/).ç
+  * Para modificar atributos y variables de entorno se usa [monkeypatch](https://docs.pytest.org/en/stable/reference/reference.html#pytest.monkeypatch.monkeypatch).
+- Se incluye un flujo de **github actions** [./.github/workflows/test.yml](./.github/workflows/test.yml) para que se ejecuten los test en cada `push` o `pull requests` al repositorio.
+
+![Ejemplo de ejecución de tests](./assets/ejemplo-test.gif)
+
+
 ---
 [@title]: #
 [Source - https://stackoverflow.com/a/35760941]: #
