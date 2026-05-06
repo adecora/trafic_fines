@@ -1,6 +1,5 @@
 import re
 import xml.etree.ElementTree as ET
-from tkinter import E
 
 # Xml namespaces
 # Ver: https://docs.python.org/3/library/xml.etree.elementtree.html#parsing-xml-with-namespaces
@@ -11,7 +10,7 @@ DCT_NS = "http://purl.org/dc/terms/"
 # Exiten lo ficheros de tipo: 210104-82-multas-circulacion-detalle-txt que traen el dato en formato txt, separa por tabuladores
 TITLE_RE = re.compile(r"^210104-\d+-multas-circulacion-detalle-csv$", re.IGNORECASE)
 DESCRIPTION_RE = re.compile(
-    r"^Multas de circulación: detalle. (?P<year>\d{4}) (?P<month>\w+). Detalle$",
+    r"^Detalle. (?P<month>\w+) (?P<year>\d{4})$",
     re.IGNORECASE,
 )
 
