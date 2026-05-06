@@ -68,7 +68,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-15-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Diciembre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Diciembre 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv/download/210104-15-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -83,7 +83,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-13-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-13-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2025 FakeMes. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. FakeMes 2025</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-13-multas-circulacion-detalle-csv/download/210104-13-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>

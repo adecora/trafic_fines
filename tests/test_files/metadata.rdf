@@ -68,7 +68,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-15-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Diciembre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Diciembre 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-15-multas-circulacion-detalle-csv/download/210104-15-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -83,7 +83,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-26-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-26-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Enero. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Enero 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-26-multas-circulacion-detalle-csv/download/210104-26-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -98,7 +98,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-337-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-337-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Febrero. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Febrero 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-337-multas-circulacion-detalle-csv/download/210104-337-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -113,7 +113,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-24-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-24-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Marzo. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Marzo 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-24-multas-circulacion-detalle-csv/download/210104-24-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -128,7 +128,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-23-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-23-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Abril. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Abril 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-23-multas-circulacion-detalle-csv/download/210104-23-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -143,7 +143,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-339-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-339-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Mayo. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Mayo 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-339-multas-circulacion-detalle-csv/download/210104-339-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -158,7 +158,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-341-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-341-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Junio. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Junio 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-341-multas-circulacion-detalle-csv/download/210104-341-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -173,7 +173,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-21-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-21-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Julio. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Julio 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-21-multas-circulacion-detalle-csv/download/210104-21-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -188,7 +188,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-343-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-343-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Agosto. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Agosto 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-343-multas-circulacion-detalle-csv/download/210104-343-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -203,7 +203,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-344-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-344-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Septiembre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Septiembre 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-344-multas-circulacion-detalle-csv/download/210104-344-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -218,7 +218,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-18-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-18-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Octubre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Octubre 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-18-multas-circulacion-detalle-csv/download/210104-18-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -233,7 +233,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-358-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-358-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2015 Septiembre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Septiembre 2015</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-358-multas-circulacion-detalle-csv/download/210104-358-multas-circulacion-detalle-csv.csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
@@ -263,7 +263,7 @@ También dispone en el Portal de distintos conjuntos de datos presupuestos, con 
     <dcat:distribution>
       <dcat:Distribution rdf:about="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-16-multas-circulacion-detalle-csv">
         <dct:title xml:lang="es">210104-16-multas-circulacion-detalle-csv</dct:title>
-        <dct:description xml:lang="es">Multas de circulación: detalle. 2024 Noviembre. Detalle</dct:description>
+        <dct:description xml:lang="es">Detalle. Noviembre 2024</dct:description>
         <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/CSV"/>
         <dcat:accessURL rdf:resource="https://datos.madrid.es/dataset/210104-0-multas-circulacion-detalle/resource/210104-16-multas-circulacion-detalle-csv/download/210104-16-multas-circulacion-detalle-csv"/>
         <dcatap:availability rdf:resource="http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE"/>
